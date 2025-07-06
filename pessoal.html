@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Pessoal</title>
+</head>
+
+
+<body id="bodypessoal">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <header>
+        <!-- NAVEGADOR PARA IR PARA AS OUTRAS PÁGINAS DO PORTFÓLIO -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Portfólio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"> <!-- ms-auto para alinhar à direita -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="biografia.html">Biografia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Pessoal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <hr>
+    </header>
+    <main>
+
+        <h1 class="text-center mb-4 mt-5">PESSOAL</h1>
+
+        <!-- SEÇÃO DE HOBBIES + CARROSSEL DE FOTOS -->
+        <h2>Hobbies</h2>
+        <!-- SLIDES DO CARROSSEL -->
+        <div class="container">
+            <div id="carouselHobbies" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHobbies" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselHobbies" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselHobbies" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselHobbies" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselHobbies" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselHobbies" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+
+                <!-- MENSAGEM E IMAGEM DOS SLIDES DO CARROSSEL -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="imagemcarossel" src="assets/images/cozinhar.jpg" class="d-block w-100"
+                            alt="Faca cortando ingredientes">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cozinhar</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/sobremesa.jpg" class="d-block w-100" alt="Montando uma torta">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fazer sobremesas</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/jogar.jpg" class="d-block w-100"
+                            alt="Mulher jogando The Last of Us II numa lanhouse">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Jogar jogos digitais</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/jogotabuleiro.jpg" class="d-block w-100"
+                            alt="Pessoas jogando um tabuleiro">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Jogar jogos de tabuleiro</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/leitura.jpg" class="d-block w-100" alt="Livro">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Leitura</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/assistirseriesfilmes.jpg" class="d-block w-100"
+                            alt="Assistir série e filmes">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Assistir séries/filmes</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTROLES DO CAROSSEL -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHobbies"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHobbies"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <p class="text-center mt-5">Gosto de cozinhar e preparar doces, explorando sabores e criando momentos
+                especiais. Me divirto jogando — tanto online quanto em jogos de tabuleiro. Também adoro ler e assistir
+                filmes e séries, formas de me inspirar e relaxar no dia a dia.</p>
+        </div>
+
+
+
+        <!-- <section>
+            
+            <ul>
+                <li>Cozinhar</li>
+                <li>Fazer doces</li>
+                <li>Jogar jogos online</li>
+                <li>Jogar jogos de tabuleiro</li>
+                <li>Ler</li>
+            </ul>
+        </section> -->
+
+        <!-- SEÇÃO DE ARTISTAS POP + CARROSSEL DE FOTOS -->
+        <h2>Top Artistas</h2>
+        <div class="container">
+            <div id="carouselAristas" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselAristas" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselAristas" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselAristas" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselAristas" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselAristas" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselAristas" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselAristas" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                </div>
+
+                <!-- MENSAGEM E IMAGEM DOS SLIDES DO CARROSSEL -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="imagemcarossel" src="assets/images/oliviarodrigo.png" class="d-block w-100"
+                            alt="Olivia Rodrigo">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a href="https://open.spotify.com/intl-pt/artist/1McMsnEElThX1knmY4oliG?si=TTViZIQxSiKONrCxa56y9w"
+                                    class="text-decoration-none text-white" target="_blank">Olivia Rodrigo</a></h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/conangray.webp" class="d-block w-100" alt="Conan Gray">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a href="https://open.spotify.com/intl-pt/artist/4Uc8Dsxct0oMqx0P6i60ea?si=jaMAEmoGQvqV0JRbe51hpw"
+                                    class="text-decoration-none text-white" target="_blank">Conan Gray</a></h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/billieeilish.jpg" class="d-block w-100" alt="Billie Eilish">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a href="https://open.spotify.com/intl-pt/artist/6qqNVTkY8uBg9cP3Jd7DAH?si=hmNoji75TMmTrQWz37izPQ"
+                                    class="text-decoration-none text-white" target="_blank">Billie Eilish</a></h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/jao.webp" class="d-block w-100" alt="Jão">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a href="https://open.spotify.com/intl-pt/artist/59FrDXDVJz0EKqYg39dnT2?si=C54mNBxHSfS7SSnARBcUsA"
+                                    class="text-decoration-none text-white" target="_blank">Jão</a></h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/sabrinacarpenter.png" class="d-block w-100" alt="Sabrina Carpenter">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a href="https://open.spotify.com/intl-pt/artist/74KM79TiuVKeVCqs8QtB0B?si=l1WzTQzMRTyYZfNpXG0H1g"
+                                    class="text-decoration-none text-white" target="_blank">Sabrina Carpenter</a></h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/chappelroan.webp" class="d-block w-100" alt="Chappel Roan">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a href="https://open.spotify.com/intl-pt/artist/7GlBOeep6PqTfFi59PTUUN?si=jyv3wYtMT12PO7X2mlOUDQ"
+                                    class="text-decoration-none text-white" target="_blank">Chappell Roan</a></h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/charlixcx.jpg" class="d-block w-100" alt="Charli XCX">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5><a href="https://open.spotify.com/intl-pt/artist/25uiPmTg16RbhZWAqwLBy5?si=acDWYtAbSi6Xfad2LuDzxA"
+                                    class="text-decoration-none text-white" target="_blank">Charli XCX</a></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTROLES DO CAROSSEL -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAristas"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAristas"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <p class="text-center mt-5">Sou fã de pop — gosto de artistas que colocam emoção e
+                autenticidade em tudo o que fazem. Olivia Rodrigo e Conan Gray traduzem sentimentos com letras intensas
+                e nostálgicas. Billie Eilish me encanta com seu estilo único e atmosferas profundas. Já Jão traz um pop
+                nacional carregado de emoção e identidade. Também curto a energia eletrizante da Charli XCX, a ousadia
+                de Chappell Roan e o charme pop de Sabrina Carpenter. Cada um, à sua maneira, faz parte da trilha sonora
+                da minha vida.</p>
+        </div>
+        <!-- SEÇÃO DE JOGOS + CARROSSEL DE FOTOS -->
+        <section>
+            <h2>Jogos</h2>
+
+            <div class="container">
+                <div id="carouselJogos" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselJogos" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselJogos" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselJogos" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselJogos" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselJogos" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselJogos" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselJogos" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                    </div>
+
+                    <!-- MENSAGEM E IMAGEM DOS SLIDES DO CARROSSEL -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id="imagemcarossel" src="assets/images/stardewvalley.jpg" class="d-block w-100"
+                                alt="Stardew Valley">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="https://store.steampowered.com/app/413150/Stardew_Valley/"
+                                        class="text-decoration-none text-white" target="_blank">Stardew Valley</a></h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/lifeisstrange2.avif" class="d-block w-100" alt="Life Is Strange 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="https://store.steampowered.com/app/532210/Life_is_Strange_2/"
+                                        class="text-decoration-none text-white" target="_blank">Life Is Strange 2</a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/detroitbecomehuman.jpg  " class="d-block w-100"
+                                alt="Detroit: Become Human">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/"
+                                        class="text-decoration-none text-white" target="_blank">Detroit: Become
+                                        Human</a></h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/lifeisstrange.avif" class="d-block w-100" alt="Life Is Strange">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/?curator_clanid=36149206"
+                                        class="text-decoration-none text-white" target="_blank">Life Is Strange</a></h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/hollowknight.avif" class="d-block w-100" alt="Hollow Knight">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="https://store.steampowered.com/app/367520/Hollow_Knight/"
+                                        class="text-decoration-none text-white" target="_blank">Hollow Knight</a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/minecraft.avif" class="d-block w-100" alt="Minecraft">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="https://www.minecraft.net/pt-br/store/minecraft-java-bedrock-edition-pc?tabs=%7B%22details%22%3A0%7D"
+                                        class="text-decoration-none text-white" target="_blank">Minecraft</a></h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/spiritfarer.avif" class="d-block w-100" alt="SpiritFarer">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><a href="https://store.steampowered.com/app/972660/Spiritfarer_Edio_Farewell/"
+                                        class="text-decoration-none text-white" target="_blank">SpiritFarer</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CONTROLES DO CAROSSEL -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselJogos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselJogos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p class="text-center mt-5">Gosto de jogos com histórias marcantes, visuais únicos e experiências
+                    emocionais. Títulos como Life Is Strange, Detroit: Become Human e Spiritfarer me conquistam pela
+                    narrativa. Stardew Valley e Minecraft trazem leveza e criatividade, enquanto Hollow Knight me
+                    desafia com sua arte e imersão. Cada jogo me oferece uma forma diferente de explorar, sentir e
+                    imaginar.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SONHOS DE VIDA + CARROSSEL DE FOTOS -->
+        <section>
+            <h2>Sonhos</h2>
+            <div class="container">
+                <div id="carouselSonhos" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselSonhos" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselSonhos" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselSonhos" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselSonhos" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselSonhos" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselSonhos" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+
+                    <!-- MENSAGEM E IMAGEM DOS SLIDES DO CARROSSEL -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id="imagemcarossel" src="assets/images/familia.jpg" class="d-block w-100"
+                                alt="Uma família">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Construir uma família</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/conhecerculturas.jpg" class="d-block w-100"
+                                alt="Conhecendo culturas">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Conhecer diversas culturas e vivências ao redor do mundo</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/padaria.jpg" class="d-block w-100" alt="Padaria">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ser dono de padaria</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/apartamento.jpg" class="d-block w-100"
+                                alt="Apartamento com luz natural">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Morar em um apartamento com abundância de luz natural e plantas</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/confeitaria.jpg" class="d-block w-100"
+                                alt="Homem trabalhando como confeiteiro">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Trabalhar como confeiteiro</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/cidadepequena.jpg" class="d-block w-100"
+                                alt="Casa aconchegante em uma cidade pequena">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ter uma casa aconchegante em uma cidade pequena</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CONTROLES DO CAROSSEL -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSonhos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSonhos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p class="text-center mt-5">Eu sonho, primeiramente, em morar em um apartamento cheio de luz natural e plantas, onde eu possa
+                    começar minha família e construir uma vida leve e cheia de amor. Quero conhecer o mundo, ver culturas novas, explorar lugares e ouvir diversas histórias. Mais para frente, eu me vejo em uma pequena cidade, numa casa gostosa e calma — talvez até começando uma padaria, fazendo doces como hobby e colocando carinho em cada receita.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="text-white pt-5 pb-3" style="background: linear-gradient(to right, #111, #333);">
+        <section class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Sobre Mim</h5>
+                    <p>Sou Wendel Risse da Cruz e busco sempre melhorar como pessoa! </p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Ferramentas</h5>
+                    <ul class="list-unstyled">
+                        <li>HTML & CSS</li>
+                        <li>Dart e Javascript</li>
+                        <li>MongoDB & Firebase</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contato</h5>
+                    <p><i class="bi bi-envelope me-2"></i> wendelrisse@gmail.com</p>
+                    <p><i class="bi bi-geo-alt me-2"></i> Toledo – PR, Brasil</p>
+                    <div class="mt-2">
+                        <a href="https://linkedin.com/in/wendelrisse" class="text-white me-3 fs-5"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://instagram.com/wendelrisse" class="text-white me-3 fs-5"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://tiktok.com/@wenzay_" class="text-white fs-5"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center mt-4 pt-3 border-top border-secondary">
+            <small>&copy; 2025 Wendel Risse. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+</body>
+
+</html>
