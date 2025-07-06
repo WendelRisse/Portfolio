@@ -44,7 +44,7 @@ footer {
     min-height: 300px;
 }
 
-#imagemcarrossel {
+.imagemcarrossel {
     max-width: 500px;
     margin: auto;
 }
